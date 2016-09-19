@@ -86,12 +86,12 @@ class FromNowTests: XCTestCase {
 
     func getLocalEnglishMoment(_ date: Date) -> Moment {
         return moment(date, timeZone: TimeZone.current,
-                      locale: Locale(localeIdentifier: "en"))
+                      locale: Locale(identifier: "en"))
     }
 
     func testFromNowHebrew() {
         let mom = moment(Date(), timeZone: TimeZone.current,
-                         locale: Locale(localeIdentifier: "he"))
+                         locale: Locale(identifier: "he"))
     XCTAssertEqual(mom.fromNow(), "ממש עכשיו")
     }
 }

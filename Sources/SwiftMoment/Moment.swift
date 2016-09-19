@@ -482,7 +482,8 @@ public struct Moment: Comparable {
             fallthrough
         case .Quarters, .Months, .Weeks:
             if unit == .Weeks {
-                components.day -= (components.weekday! - 2)
+                components.day = components.weekday!
+				components.day = components.day! - 2
             } else {
                 components.day = 1
             }

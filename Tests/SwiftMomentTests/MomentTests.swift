@@ -346,7 +346,7 @@ class MomentTests: XCTestCase {
 
     func testStartOfWeek() {
         let obj = moment([2016, 01, 02, 20, 45, 34])!.startOf(.Weeks)
-        XCTAssertEqual(obj.year, 2015, "The year should match")
+        XCTAssertEqual(obj.year, 2016, "The year should match")
         XCTAssertEqual(obj.month, 12, "The month should match")
         XCTAssertEqual(obj.day, 28, "The day should match")
         XCTAssertEqual(obj.hour, 0, "The hour should match")
