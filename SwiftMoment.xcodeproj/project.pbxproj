@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_SwiftMoment, ______Target_SwiftMomentTests);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SwiftMoment/Duration.swift' = {
+            name = 'Duration.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Sources/SwiftMoment/Duration.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SwiftMoment/Extensions.swift' = {
+            name = 'Extensions.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Sources/SwiftMoment/Extensions.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SwiftMoment/Moment.swift' = {
+            name = 'Moment.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Sources/SwiftMoment/Moment.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SwiftMoment/MomentFromNow.swift' = {
+            name = 'MomentFromNow.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Sources/SwiftMoment/MomentFromNow.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SwiftMoment/Operators.swift' = {
+            name = 'Operators.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Sources/SwiftMoment/Operators.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/SwiftMoment/TimeUnit.swift' = {
+            name = 'TimeUnit.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Sources/SwiftMoment/TimeUnit.swift';
+            sourceTree = '<group>';
+        };
+        _______Group_SwiftMoment = {
+            isa = PBXGroup;
+            name = 'SwiftMoment';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SwiftMoment/Duration.swift', '__PBXFileRef_Sources/SwiftMoment/Extensions.swift', '__PBXFileRef_Sources/SwiftMoment/Moment.swift', '__PBXFileRef_Sources/SwiftMoment/MomentFromNow.swift', '__PBXFileRef_Sources/SwiftMoment/Operators.swift', '__PBXFileRef_Sources/SwiftMoment/TimeUnit.swift');
+        };
+        ______Target_SwiftMoment = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SwiftMoment;
+            buildPhases = (
+CompilePhase_SwiftMoment, ___LinkPhase_SwiftMoment);
+            buildRules = ();
+            dependencies = ();
+            name = 'SwiftMoment';
+            productName = SwiftMoment;
+            productReference = _____Product_SwiftMoment;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_SwiftMoment = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'SwiftMoment.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SwiftMoment = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SwiftMoment/Duration.swift', '__src_cc_ref_Sources/SwiftMoment/Extensions.swift', '__src_cc_ref_Sources/SwiftMoment/Moment.swift', '__src_cc_ref_Sources/SwiftMoment/MomentFromNow.swift', '__src_cc_ref_Sources/SwiftMoment/Operators.swift', '__src_cc_ref_Sources/SwiftMoment/TimeUnit.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SwiftMoment/Duration.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SwiftMoment/Duration.swift';
+        };
+        '__src_cc_ref_Sources/SwiftMoment/Extensions.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SwiftMoment/Extensions.swift';
+        };
+        '__src_cc_ref_Sources/SwiftMoment/Moment.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SwiftMoment/Moment.swift';
+        };
+        '__src_cc_ref_Sources/SwiftMoment/MomentFromNow.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SwiftMoment/MomentFromNow.swift';
+        };
+        '__src_cc_ref_Sources/SwiftMoment/Operators.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SwiftMoment/Operators.swift';
+        };
+        '__src_cc_ref_Sources/SwiftMoment/TimeUnit.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SwiftMoment/TimeUnit.swift';
+        };
+        ___LinkPhase_SwiftMoment = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_SwiftMoment = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SwiftMoment, _ReleaseConf_SwiftMoment);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SwiftMoment = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftMoment.xcodeproj/SwiftMoment_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  PRODUCT_BUNDLE_IDENTIFIER = "SwiftMoment" ;  PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)" ;  PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Debug;
+        };
+        _ReleaseConf_SwiftMoment = {
+            isa = XCBuildConfiguration;
+            buildSettings = { ENABLE_TESTABILITY = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftMoment.xcodeproj/SwiftMoment_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  PRODUCT_BUNDLE_IDENTIFIER = "SwiftMoment" ;  PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)" ;  PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Release;
+        };
+        __Dependency_SwiftMoment = {
+            isa = PBXTargetDependency;
+            target = ______Target_SwiftMoment;
+        };
+        '__PBXFileRef_Tests/SwiftMomentTests/DurationTests.swift' = {
+            name = 'DurationTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftMomentTests/DurationTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftMomentTests/ExtensionsTests.swift' = {
+            name = 'ExtensionsTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftMomentTests/ExtensionsTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftMomentTests/FromNowTests.swift' = {
+            name = 'FromNowTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftMomentTests/FromNowTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/SwiftMomentTests/MomentTests.swift' = {
+            name = 'MomentTests.swift';
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Tests/SwiftMomentTests/MomentTests.swift';
+            sourceTree = '<group>';
+        };
+        _______Group_SwiftMomentTests = {
+            isa = PBXGroup;
+            name = 'SwiftMomentTests';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/SwiftMomentTests/DurationTests.swift', '__PBXFileRef_Tests/SwiftMomentTests/ExtensionsTests.swift', '__PBXFileRef_Tests/SwiftMomentTests/FromNowTests.swift', '__PBXFileRef_Tests/SwiftMomentTests/MomentTests.swift');
+        };
+        ______Target_SwiftMomentTests = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SwiftMomentTests;
+            buildPhases = (
+CompilePhase_SwiftMomentTests, ___LinkPhase_SwiftMomentTests);
+            buildRules = ();
+            dependencies = (__Dependency_SwiftMoment);
+            name = 'SwiftMomentTests';
+            productName = SwiftMomentTests;
+            productReference = _____Product_SwiftMomentTests;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_SwiftMomentTests = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'SwiftMomentTests.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SwiftMomentTests = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/SwiftMomentTests/DurationTests.swift', '__src_cc_ref_Tests/SwiftMomentTests/ExtensionsTests.swift', '__src_cc_ref_Tests/SwiftMomentTests/FromNowTests.swift', '__src_cc_ref_Tests/SwiftMomentTests/MomentTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/SwiftMomentTests/DurationTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftMomentTests/DurationTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftMomentTests/ExtensionsTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftMomentTests/ExtensionsTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftMomentTests/FromNowTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftMomentTests/FromNowTests.swift';
+        };
+        '__src_cc_ref_Tests/SwiftMomentTests/MomentTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftMomentTests/MomentTests.swift';
+        };
+        ___LinkPhase_SwiftMomentTests = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SwiftMoment_via_SwiftMomentTests);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SwiftMoment_via_SwiftMomentTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SwiftMoment;
+        };
+        _______Confs_SwiftMomentTests = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SwiftMomentTests, _ReleaseConf_SwiftMomentTests);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SwiftMomentTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftMoment.xcodeproj/SwiftMomentTests_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Debug;
+        };
+        _ReleaseConf_SwiftMomentTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftMoment.xcodeproj/SwiftMomentTests_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
+            name = Release;
+        };
+        __Dependency_SwiftMomentTests = {
+            isa = PBXTargetDependency;
+            target = ______Target_SwiftMomentTests;
+        };
+        '__PBXFileRef_SwiftMoment.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'SwiftMoment.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_SwiftMoment.xcodeproj/Configs/Debug.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'SwiftMoment.xcodeproj/Configs/Debug.xcconfig';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_SwiftMoment.xcodeproj/Configs/Release.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'SwiftMoment.xcodeproj/Configs/Release.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_SwiftMoment.xcodeproj/Configs/Project.xcconfig', '__PBXFileRef_SwiftMoment.xcodeproj/Configs/Debug.xcconfig', '__PBXFileRef_SwiftMoment.xcodeproj/Configs/Release.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_SwiftMoment);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_SwiftMomentTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_SwiftMomentTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_SwiftMoment);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_SwiftMoment.xcodeproj/Configs/Debug.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_SwiftMoment.xcodeproj/Configs/Release.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
