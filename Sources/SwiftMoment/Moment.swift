@@ -20,7 +20,7 @@ import Foundation
  - returns: A moment instance.
  */
 public func moment(_ timeZone: TimeZone = TimeZone.current,
-                   locale: Locale = Locale.autoupdatingCurrent) -> Moment {
+                   locale: Locale = Locale.current) -> Moment {
     return Moment(timeZone: timeZone, locale: locale)
 }
 
@@ -42,7 +42,7 @@ public func utc() -> Moment {
  */
 public func moment(_ stringDate: String,
                    timeZone: TimeZone = TimeZone.current,
-                   locale: Locale = Locale.autoupdatingCurrent) -> Moment? {
+                   locale: Locale = Locale.current) -> Moment? {
 
     let formatter = DateFormatter()
     formatter.timeZone = timeZone
@@ -87,7 +87,7 @@ public func moment(_ stringDate: String,
 
 public func moment(_ stringDate: String, dateFormat: String,
                    timeZone: TimeZone = TimeZone.current,
-                   locale: Locale = Locale.autoupdatingCurrent) -> Moment? {
+                   locale: Locale = Locale.current) -> Moment? {
     let formatter = DateFormatter()
     formatter.dateFormat = dateFormat
     formatter.timeZone = timeZone
@@ -109,7 +109,7 @@ public func moment(_ stringDate: String, dateFormat: String,
  - returns: An optional wrapping a Moment instance
  */
 public func moment(_ params: [Int], timeZone: TimeZone = TimeZone.current,
-                   locale: Locale = Locale.autoupdatingCurrent) -> Moment? {
+                   locale: Locale = Locale.current) -> Moment? {
     if params.count > 0 {
         var calendar = Calendar.current
         calendar.timeZone = timeZone
@@ -140,7 +140,7 @@ public func moment(_ params: [Int], timeZone: TimeZone = TimeZone.current,
 }
 
 public func moment(_ dict: [String: Int], timeZone: TimeZone = TimeZone.current,
-                   locale: Locale = Locale.autoupdatingCurrent) -> Moment? {
+                   locale: Locale = Locale.current) -> Moment? {
     if dict.count > 0 {
         var params = [Int]()
         if let year = dict["year"] {
@@ -177,7 +177,7 @@ public func moment(_ seconds: TimeInterval) -> Moment {
 }
 
 public func moment(_ date: Date, timeZone: TimeZone = TimeZone.current,
-                   locale: Locale = Locale.autoupdatingCurrent) -> Moment {
+                   locale: Locale = Locale.current) -> Moment {
     return Moment(date: date, timeZone: timeZone, locale: locale)
 }
 
@@ -245,7 +245,7 @@ public struct Moment: Comparable {
     public let locale: Locale
 
     init(date: Date = Date(), timeZone: TimeZone = TimeZone.current,
-         locale: Locale = Locale.autoupdatingCurrent) {
+         locale: Locale = Locale.current) {
         self.date = date
         self.timeZone = timeZone
         self.locale = locale
