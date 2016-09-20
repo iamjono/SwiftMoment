@@ -421,8 +421,9 @@ public struct Moment: Comparable {
         var cal = Calendar(identifier: Calendar.Identifier.gregorian)
         cal.timeZone = timeZone
         cal.locale = locale
-        if let newDate = (cal as NSCalendar).date(byAdding: components, to: date,
-                                                    options: NSCalendar.Options.init(rawValue: 0)) {
+        if let newDate = cal.date(
+			byAdding: components,
+			to: date) {
           return Moment(date: newDate)
         }
         return self
@@ -475,8 +476,10 @@ public struct Moment: Comparable {
     public func startOf(_ unit: TimeUnit) -> Moment {
         let cal = Calendar.current
         var newDate: Date?
-        var components = (cal as NSCalendar).components([.year, .month, .weekday, .day, .hour, .minute, .second],
-                                        from: date)
+        var components = cal.dateComponents(
+			[.year, .month, .weekday, .day, .hour, .minute, .second],
+			from: date
+		)
         switch unit {
         case .Seconds:
             return self
