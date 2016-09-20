@@ -182,9 +182,12 @@ public func moment(_ date: Date, timeZone: TimeZone = TimeZone.current,
 }
 
 public func moment(_ moment: Moment) -> Moment {
-    let copy = ((moment.date as Date).copy() as? Date)!
-    let timeZone = ((moment.timeZone as NSTimeZone).copy() as? TimeZone)!
-    let locale = ((moment.locale as NSLocale).copy() as? Locale)!
+//    let copy = ((moment.date as Date).copy() as? Date)!
+//    let timeZone = ((moment.timeZone as NSTimeZone).copy() as? TimeZone)!
+//    let locale = ((moment.locale as NSLocale).copy() as? Locale)!
+	let copy = moment.date as Date
+	let timeZone = moment.timeZone as TimeZone
+	let locale = moment.locale as Locale
     return Moment(date: copy, timeZone: timeZone, locale: locale)
 }
 
