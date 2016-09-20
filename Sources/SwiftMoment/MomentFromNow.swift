@@ -81,9 +81,12 @@ extension Moment {
     }
 
     fileprivate func stringFromFormat(_ format: String, withValue value: Int) -> String {
-      let localeFormat = String(format: format,
-                                getLocaleFormatUnderscoresWithValue(Double(value)))
-      return String(format: NSDateTimeAgoLocalizedStrings(localeFormat), value)
+      let localeFormat = String(
+								format: format,
+                                getLocaleFormatUnderscoresWithValue(Double(value))
+								)
+		return value
+//		return String(format: NSDateTimeAgoLocalizedStrings(localeFormat), value)
     }
 
     fileprivate func NSDateTimeAgoLocalizedStrings(_ key: String) -> String {
