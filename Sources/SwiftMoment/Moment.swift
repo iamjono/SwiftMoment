@@ -259,7 +259,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.timeZone = timeZone
         cal.locale = locale
-        let components = (cal as NSCalendar).components(.year, from: date)
+        let components = (cal as Calendar).dateComponents([.year], from: date)
         return components.year!
     }
 
@@ -268,7 +268,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.timeZone = timeZone
         cal.locale = locale
-        let components = (cal as NSCalendar).components(.month, from: date)
+        let components = (cal as Calendar).dateComponents([.month], from: date)
         return components.month!
     }
 
@@ -283,7 +283,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.timeZone = timeZone
         cal.locale = locale
-        let components = (cal as NSCalendar).components(.day, from: date)
+        let components = (cal as Calendar).dateComponents([.day], from: date)
         return components.day!
     }
 
@@ -291,7 +291,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.timeZone = timeZone
         cal.locale = locale
-        let components = (cal as NSCalendar).components(.hour, from: date)
+        let components = (cal as Calendar).dateComponents([.hour], from: date)
         return components.hour!
     }
 
@@ -299,7 +299,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.timeZone = timeZone
         cal.locale = locale
-        let components = (cal as NSCalendar).components(.minute, from: date)
+        let components = (cal as Calendar).dateComponents([.minute], from: date)
         return components.minute!
     }
 
@@ -307,7 +307,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.timeZone = timeZone
         cal.locale = locale
-        let components = (cal as NSCalendar).components(.second, from: date)
+        let components = (cal as Calendar).dateComponents([.second], from: date)
         return components.second!
     }
 
@@ -315,7 +315,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.timeZone = timeZone
         cal.locale = locale
-        let components = (cal as NSCalendar).components(.weekday, from: date)
+        let components = (cal as Calendar).dateComponents([.weekday], from: date)
         return components.weekday!
     }
 
@@ -331,7 +331,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.locale = locale
         cal.timeZone = timeZone
-        let components = (cal as NSCalendar).components(.weekdayOrdinal, from: date)
+        let components = (cal as Calendar).dateComponents([.weekdayOrdinal], from: date)
         return components.weekdayOrdinal!
     }
 
@@ -339,7 +339,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.locale = locale
         cal.timeZone = timeZone
-        let components = (cal as NSCalendar).components(.weekOfYear, from: date)
+        let components = (cal as Calendar).dateComponents([.weekOfYear], from: date)
         return components.weekOfYear!
     }
 
@@ -347,7 +347,7 @@ public struct Moment: Comparable {
         var cal = Calendar.current
         cal.locale = locale
         cal.timeZone = timeZone
-        let components = (cal as NSCalendar).components(.quarter, from: date)
+        let components = (cal as Calendar).dateComponents([.quarter], from: date)
         return components.quarter!
     }
 
