@@ -120,26 +120,26 @@ extension Moment {
     }
 
     fileprivate func getLocaleFormatUnderscoresWithValue(_ value: Double) -> String {
-      guard let localeCode = Locale.preferredLanguages.first else {
-        return ""
-      }
-
-      if localeCode == "ru" {
-        let XY = Int(floor(value)) % 100
-        let Y = Int(floor(value)) % 10
-
-        if Y == 0 || Y > 4 || (XY > 10 && XY < 15) {
-          return ""
-        }
-
-        if Y > 1 && Y < 5 && (XY < 10 || XY > 20) {
-          return "_"
-        }
-
-        if Y == 1 && XY != 11 {
-          return "__"
-        }
-      }
+//      guard let localeCode = Locale.preferredLanguages.first else {
+//        return ""
+//      }
+//
+//      if localeCode == "ru" {
+//        let XY = Int(floor(value)) % 100
+//        let Y = Int(floor(value)) % 10
+//
+//        if Y == 0 || Y > 4 || (XY > 10 && XY < 15) {
+//          return ""
+//        }
+//
+//        if Y > 1 && Y < 5 && (XY < 10 || XY > 20) {
+//          return "_"
+//        }
+//
+//        if Y == 1 && XY != 11 {
+//          return "__"
+//        }
+//      }
 
       return ""
     }
