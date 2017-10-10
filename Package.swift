@@ -1,9 +1,9 @@
 // Generated automatically by Perfect Assistant Application
-// Date: 2016-09-17 01:35:49 +0000
+// Date: 2017-10-10 14:00:01 +0000
 import PackageDescription
 let package = Package(
-    name: "SwiftMoment",
-    targets: [],
-    dependencies: [],
-    exclude: []
+	name: "SwiftMoment",
+	targets: [],
+	dependencies: [
+	]
 )

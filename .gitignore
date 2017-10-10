@@ -67,3 +67,6 @@ fastlane/test_output
 
 Packages/
 docs/
+.build_lin
+SwiftMoment.xcodeproj
+buildlinux
