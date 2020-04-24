@@ -64,15 +64,15 @@ public struct Duration: Equatable {
     }
 }
 
-extension Duration: CustomStringConvertible {
-    public var description: String {
-        let formatter = DateComponentsFormatter()
-        formatter.calendar = Calendar(identifier: Calendar.Identifier.gregorian)
-        formatter.calendar?.timeZone = TimeZone(abbreviation: "UTC")!
-        formatter.allowedUnits = [.year, .month, .weekOfMonth, .day, .hour, .minute, .second]
-
-        let referenceDate = Date(timeIntervalSinceReferenceDate: 0)
-        let intervalDate = Date(timeInterval: self.interval, since: referenceDate)
-        return formatter.string(from: referenceDate, to: intervalDate)!
-    }
-}
+//extension Duration: CustomStringConvertible {
+//    public var description: String {
+//        let formatter = DateComponentsFormatter()
+//        formatter.calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+//        formatter.calendar?.timeZone = TimeZone(abbreviation: "UTC")!
+//        formatter.allowedUnits = [.year, .month, .weekOfMonth, .day, .hour, .minute, .second]
+//
+//        let referenceDate = Date(timeIntervalSinceReferenceDate: 0)
+//        let intervalDate = Date(timeInterval: self.interval, since: referenceDate)
+//        return formatter.string(from: referenceDate, to: intervalDate)!
+//    }
+//}
